@@ -1,0 +1,26 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This is a project for the UT Coding Bootcamp that takes in burger orders and let you eat it ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericeoeur/burger.git"
+  },
+  "author": "Eric O",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericeoeur/burger/issues"
+  },
+  "homepage": "https://github.com/ericeoeur/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}
