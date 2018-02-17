@@ -5,7 +5,7 @@
       <h4 class="red_font">Ready to eat!</h4>
       <div id="ready_to_eat">
 
-        <!-- Dynamically Insert Ready Pizzas Here -->
+        <!-- Dynamically Insert Burgers Here -->
         {{#each burgers}}
           {{#unless devoured}}
           <form action="/burger/eat/{{id}}" method="POST">
@@ -24,10 +24,10 @@
 
     <!-- Right side (already eaten) -->
     <div class="col-md-6">
-      <h4 class="red_font">Already eaten!</h4>
+      <h4 class="red_font"> Burgers Already eaten!</h4>
       <div id="already_eaten">
 
-        <!-- Dynamically Insert Eaten Pizza Here -->
+        <!-- Dynamically Insert Eaten burgers Here -->
         {{#each burgers}}
           {{#if this.devoured}}
             <div class="input-group">
@@ -42,47 +42,3 @@
 </div>
 
 
-
-{{!-- <h1>Burgers!</h1>
-
-<h2>burger list</h2>
-
-<ul>
-   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block hungry=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-
-<ul>
-   {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block hungry=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-
-
-
-
-
-<h2>Add a Burger!</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="devoured">Hungry?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Hungry!<br>
-    <input type="radio" name="devoured" value="0"> Not Hungry
-  </div>
-
-
-  <button type="submit">Add burger</button>
-</form> --}}
